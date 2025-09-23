@@ -1,0 +1,44 @@
+﻿<Window x:Class="connection.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:connection"
+        mc:Ignorable="d"
+        Title="Register" Height="600" Width="400">
+    <StackPanel>
+        <StackPanel >
+            <TextBlock HorizontalAlignment="Center" Text="Register Student" FontSize="30" Margin="10" FontWeight="Bold"></TextBlock>
+
+        <TextBlock Text="Name" FontSize="20" ></TextBlock>
+        <TextBox x:Name="txtname" Margin="0,0,5,0"></TextBox>
+
+        <TextBlock Text="Email" FontSize="20" ></TextBlock>
+        <TextBox x:Name="txtemail" Margin="0,0,5,0"></TextBox>
+
+        <TextBlock Text="Phone" FontSize="20" ></TextBlock>
+        <TextBox x:Name="txtphone" Margin="0,0,5,0"></TextBox>
+
+        <TextBlock Text="Date of Birth" FontSize="20" />
+        <DatePicker x:Name="DateDOB"/>
+
+        <TextBlock Text="Course Enrolled" FontSize="20" ></TextBlock>
+        <ComboBox x:Name="comboCourse" Margin="0,0,5,0"/>
+
+        <TextBlock Text="Address" FontSize="20" ></TextBlock>
+        <TextBox x:Name="txtAddress" Margin="0,0,5,0" MaxLines="200" ></TextBox>
+
+
+
+    </StackPanel>
+    <StackPanel Orientation="Horizontal">
+        <Button Content="Clear" Width="100" Height="50" Margin="10"></Button>
+        <Button Content="Register" x:Name="btnreg" Click="btnreg_Click"  Width="100" Margin="10"></Button>
+    </StackPanel>
+
+    </StackPanel>
+
+
+
+
+</Window>
