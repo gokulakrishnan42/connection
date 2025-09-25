@@ -1,8 +1,11 @@
-﻿using connection.Model;
+﻿using ConnectionBL;
+using ConnectionDA;
+using ConnectionModel;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using ConnectionModel;
 using System.Windows;
-using connection.BL;
+
 namespace connection
 {
     /// <summary>
@@ -41,7 +44,7 @@ namespace connection
 
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
-            connection.Model.Student student = new connection.Model.Student();
+            Student student = new Student();
             StdRegister or =new StdRegister();
             student.Sname = txtname.Text;
             student.Email= txtemail.Text;

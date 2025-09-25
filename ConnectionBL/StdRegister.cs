@@ -1,9 +1,12 @@
-﻿using connection.DataAccess;
-using connection.Model;
-using Microsoft.Data.Sql;
+﻿using ConnectionDA;
+using ConnectionModel;
 using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sql;
 
-namespace connection.BL
+
+
+
+namespace ConnectionBL
 {
     public class StdRegister
     {
@@ -21,6 +24,7 @@ namespace connection.BL
             return sQLHelper.ExcuteQuery(sql, parameters);
 
         }
+       
 
 
 

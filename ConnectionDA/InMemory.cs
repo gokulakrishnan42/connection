@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace connection.DataAccess
+namespace ConnectionDA
 {
     internal class InMemory
     {

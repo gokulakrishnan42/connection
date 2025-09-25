@@ -1,12 +1,11 @@
-﻿using Microsoft.Data.Sql;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 
 
 
 
-namespace connection.DataAccess
+namespace ConnectionDA
 {
-    internal class SQLHelper
+    public class SQLHelper
     {
         public int ExcuteQuery(String query, Dictionary<string, string> parameters)
         {

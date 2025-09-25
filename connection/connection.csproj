@@ -9,11 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+    <Folder Include="pages\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="pages\" />
+    <ProjectReference Include="..\ConnectionBL\ConnectionBL.csproj" />
+    <ProjectReference Include="..\ConnectionModel\ConnectionModel.csproj" />
   </ItemGroup>
 
 </Project>
